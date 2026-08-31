@@ -1,0 +1,56 @@
+{
+  "model_id": "xgboost_20260831_091837_c564c7",
+  "model": "XGBoost",
+  "fine_tuning": false,
+  "feature_count": 14,
+  "training_rows": 733,
+  "metrics": {
+    "model": "XGBoost",
+    "rmse": 5.765426253669561,
+    "mae": 4.041650940941983,
+    "baseline_rmse": 3.145408588630804,
+    "improvement_pct": -83.29657630200757,
+    "beats_baseline": false,
+    "folds": [
+      {
+        "fold": 1,
+        "train_rows": 123,
+        "test_rows": 122,
+        "best_params": {}
+      },
+      {
+        "fold": 2,
+        "train_rows": 245,
+        "test_rows": 122,
+        "best_params": {}
+      },
+      {
+        "fold": 3,
+        "train_rows": 367,
+        "test_rows": 122,
+        "best_params": {}
+      },
+      {
+        "fold": 4,
+        "train_rows": 489,
+        "test_rows": 122,
+        "best_params": {}
+      },
+      {
+        "fold": 5,
+        "train_rows": 611,
+        "test_rows": 122,
+        "best_params": {}
+      }
+    ]
+  },
+  "prediction": 84.49727630615234,
+  "prediction_date": "2026-09-01",
+  "last_price": 85.6500015258789,
+  "updated_at": "2026-08-31T09:18:37Z",
+  "governance": "REJECTED",
+  "mlflow": {
+    "logged": true,
+    "tracking_uri": "http://127.0.0.1:5000"
+  }
+}

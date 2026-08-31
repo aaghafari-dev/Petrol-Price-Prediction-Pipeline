@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+data/raw/*.csv
+data/models/*.joblib
+data/models/*.json
+data/champion/*.joblib
+data/champion/*.json
+mlflow.db
+mlruns/
+logs/*

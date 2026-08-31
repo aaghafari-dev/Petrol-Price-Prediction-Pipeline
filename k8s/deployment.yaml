@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wti-predictor
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: wti-predictor}
+  template:
+    metadata:
+      labels: {app: wti-predictor}
+    spec:
+      containers:
+        - name: wti-predictor
+          image: ${APP_IMAGE:-wti-predictor:6.1.0}
+          ports:
+            - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wti-predictor
+spec:
+  selector: {app: wti-predictor}
+  ports:
+    - port: 8000
+      targetPort: 8000
