@@ -1,4 +1,4 @@
-# WTI Oil Price Predictor Pro v6.1
+# WTI Oil Price Predictor 
 
 **Production-Oriented Machine Learning \& MLOps Platform for WTI Crude Oil Price Prediction**
 
